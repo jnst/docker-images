@@ -1,0 +1,7 @@
+FROM golang:1.11-alpine3.8 AS build-env
+
+COPY . /workspace
+WORKDIR /workspace
+RUN go build -o /usr/local/bin/hello server.go
+
+ENTRYPOINT ["/usr/local/bin/hello"]
