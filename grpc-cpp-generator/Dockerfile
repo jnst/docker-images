@@ -1,8 +1,8 @@
 FROM grpc/cxx
 
-ENV SRC_DIR=./protobuf
-ENV DEST_DIR=./codegen
-ENV TARGET_FILES=${SRC_DIR}/*.proto
+ARG SRC_DIR=./protobuf
+ARG DEST_DIR=./codegen
+ARG TARGET_FILES=${SRC_DIR}/*.proto
 
 WORKDIR /workspace
 COPY ${SRC_DIR} /workspace/protobuf
