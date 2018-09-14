@@ -1,4 +1,4 @@
-# grpc-cpp-generator
+# gRPC C++ code generator
 
 ## Just generate into container
 
